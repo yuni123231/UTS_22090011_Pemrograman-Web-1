@@ -1,0 +1,273 @@
+    /* Gaya untuk header */
+    header {
+        text-align: center;
+        background-color: #3498db;  /* menetapkan warna latar belakang */
+        color: #fff;
+        padding: 10px;  /* memberikan ruang dalam elemen */
+        margin: 0;
+    }
+
+    /* Gaya untuk navigasi */
+    nav {
+        display: flex;
+        justify-content: space-between; /* Mengatur elemen ul dan h1 agar berada di sisi berlawanan */
+        align-items: center; /* Mengatur elemen ul dan h1 agar vertikal berada di tengah */
+        padding: 20px; /* Memberikan spasi di sekitar elemen nav */
+        background-color: #3498db;
+        color: #fff;
+    }
+    
+    nav .logo {
+        margin: 0; /* Menghapus margin yang ada secara default pada elemen h1 */
+        font-size: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        display: inline;
+        margin-right: 10px; /* Spasi di sisi kanan setiap elemen li */
+        font-size: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+
+    /* Gaya untuk home */
+    
+    #home {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .center-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Untuk mengisi tinggi section, sehingga kontennya berada di tengah */
+        padding: 40px;
+    }
+
+    .home-img {
+        width: 350px;
+        height: 100%;
+        margin-right: 20px; /* Spasi antara gambar dan teks */
+    }
+
+    #home table {
+        background-color: #fff;
+        padding: 20px;
+        
+    }
+
+    #home td h2 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    #home td p {
+        font-size: 16px;
+        text-align: justify;
+        
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /* Gaya untuk fitur */
+
+    .fitur {
+        display: flex;
+        justify-content: space-between; /* Membuat jarak antara kotak dengan rata tengah */
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .fitur h1 {
+        text-align: left;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .fitur-box {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #000; /* Menambahkan bingkai kotak dengan warna abu-abu (#ccc) */
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    .fitur-box img {
+        max-width: 50px; /* Ukuran gambar yang maksimum */
+    }
+
+    .img-fitur {
+        max-width: 50px; /* Ukuran gambar yang maksimum */
+        margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+    }
+
+    .center-text {
+        text-align: center; /* Mengatur teks agar berada di tengah horizontal */
+        vertical-align: middle; /* Mengatur teks agar berada di tengah vertikal */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: #000;
+        border-top: 1px solid #000; /* Garis atas 1px tebal dengan warna hitam */
+        border-bottom: 1px solid #000; /* Garis bawah 1px tebal dengan warna hitam */
+    }
+
+    /* Gaya untuk content */
+
+    #content {
+        padding: 30px;
+        background-color: #3498db;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    #content h1 {
+        font-size: 40px;
+    }
+
+    #content p {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+     /* Gaya untuk filosofi */
+
+    #philosophy {
+        text-align: center;
+        padding: 30px;
+        background-color: #3498db;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    #philosophy h1 {
+        font-size: 40px;
+    }
+
+    #philosophy h2 {
+        font-size: 20px;
+    }
+
+    #philosophy p {
+        font-size: 16px;
+    }
+
+    .text-box {
+        position: relative;
+        text-align: center;
+        transition: transform 0.5s; /* Animasi perpindahan */
+        cursor: pointer;
+    }
+     
+
+    /* Gaya untuk explore */
+
+    #explore {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #explore table{
+        margin: 15px;
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+    }
+
+    #explore table p {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    #explore td {
+        padding: 20px;
+        vertical-align: top; /* Untuk menyelaraskan konten ke atas dalam sel */
+    }
+
+    #explore h2 {
+        font-size: 30px;
+    }
+
+    #explore table h4 {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .img-explore {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px; /* Ukuran gambar yang maksimum */
+        height: auto;
+        text-align: center;
+    }
+
+
+    /* Gaya untuk about button */
+    .about-button {
+        color: #020202;
+        padding: 10px 20px; 
+        border-radius: 20px;
+        border: no1px solid #3498db8f; 
+        cursor: pointer; 
+    }
+
+    .about-button:hover {
+        background-color: #3498db; 
+    }
+
+     /* Gaya untuk contact */
+    #contact {
+        text-align: justify;
+        margin: 0 auto;
+        background-color: #3498db;
+        height: 100%;
+        color: #fff;
+        align-items: justify;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    #contact table{
+        padding: 20px;
+        width: 80%;
+    }
+
+    #contact h1{
+        margin-bottom: 10px;
+        text-align: justify;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    #contact td {
+        text-align: justify;
+        vertical-align: middle; /* Untuk menengahkan vertikal konten dalam sel */
+    }
+
+    #contact h1, h4, p {
+        margin: 10px;
+    }
+
+    /* Gaya untuk footer */
+    footer {
+        text-align: center;
+        background-color: #026fb8;
+        color: #fff;
+        padding: 10px;
+    }

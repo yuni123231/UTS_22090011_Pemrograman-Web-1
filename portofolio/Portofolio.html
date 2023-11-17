@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <nav>
+            <h1 class="logo">Portofo<span>lio</span></h1>
+            <ul style="margin: 0; display: flex;">
+                <li><a href="#container">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#work-samples">Work Samples</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    <div class="container">
+        <img src="profile.png" alt="Foto Profil Anda" class="profile-image">
+        <div class="about">
+        <h2 style="text-align: justify;">Hai, Namaku</h2>
+        <h1>Tri Yuni Ayuningtyas</h1>
+        <p style="font-size: 20px;">Saya adalah Web Developer & UI/UX Designer</p>
+        <button class="about-button" type="button" onclick="myFunction">About Me &rarr;</button>
+
+        <script>
+            // Temukan tombol dengan class "about-button"
+            var button = document.querySelector('.about-button');
+          
+            // Tambahkan event listener untuk menangani tindakan saat tombol diklik
+            button.addEventListener('click', function() {
+              // Mengarahkan pengguna ke halaman lain
+              window.location.href = '#about-me';
+            });
+          </script>
+        </div>
+    </div>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <h4>Web Developer & UI/UX Designer</h4><hr>
+        <p>Halo, saya Tri Yuni Ayuningtyas, seorang Web Developer & UI/UX Designer. Saya memiliki keahlian dalam mengembangkan aplikasi web menggunakan HTML, CSS, dan JavaScript, serta merancang antarmuka pengguna yang menarik dan fungsional.
+            Saya juga menekankan penggunaan prinsip-prinsip desain UI/UX untuk menciptakan pengalaman pengguna yang optimal. Saya memiliki keahlian dalam pembuatan prototipe, desain antarmuka pengguna yang menarik, dan pemahaman mendalam tentang responsivitas dan aksesibilitas.</p>
+        <p>Dengan latar belakang pengalaman, saya telah berkontribusi dalam proyek-proyek yang mencakup pembuatan website serta desain tampilan website dan membuat UI/UX untuk aplikasi mobile , saya telah belajar menghadapi tantangan dengan antusiasme dan inovasi. 
+            Saya menikmati proses kreatif dari konsepsi hingga pelaksanaan dan percaya bahwa setiap proyek adalah peluang untuk belajar lebih banyak.</p>
+        <p>Di samping pekerjaan, saya menikmati hobi yaitu membaca novel dan selalu bersemangat untuk tantangan baru. Jika Anda tertarik berkolaborasi atau berbicara lebih lanjut, silakan hubungi saya melalui Contact me.</p>
+    </section>
+
+    <section id="service">
+        <h2>Service</h2> 
+        <div class="zoomable-image">
+        <table style="text-align: center;">
+            <tr>
+                <td>
+                    <img src="https://i.pinimg.com/564x/31/43/dd/3143dd973c96685626b64c447639e2c1.jpg" alt="zoomable-image">
+                    <p style="text-align: center;">Web Designer</p>
+                </td>
+                <td>
+                    <img src="https://i.pinimg.com/564x/dc/96/36/dc9636358debe5e52ae70dea2c94d088.jpg" alt="zoomable-image">
+                    <p style="text-align: center;">Web Developer</p>
+                </td>
+                <td>
+                    <img src="https://i.pinimg.com/564x/da/3a/65/da3a65b7c1fe475f268477ed86b57800.jpg" alt="zoomable-image">
+                    <p style="text-align: center;">UI/UX Designer</p>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <section id="work-samples" style="text-align: center;">
+        <h2>Work Samples</h2>
+        <table>
+            <tr>
+                <td>
+                    <a href="file:///C:/xampp/htdocs/PemrogramanWeb/UTS/website/artikel.html#explore">
+                    <img src="website.jpeg" alt="Contoh Karya 1" class="sample-img">
+                    </a>
+                    <p style="text-align: center;">Membuat Website Stay Healthy Today</p>
+                </td>
+                <td>
+                    <a href="https://www.figma.com/file/0SrUYHHH4FiRjaHsdZS4Af/Untitled?type=design&node-id=0%3A1&mode=design&t=ZugUCH1HLKYmVgnO-1">
+                    <img src="desain1.jpg" alt="Contoh Karya 2" class="sample-img">
+                    </a>
+                    <p style="text-align: center;">Desain tampilan halaman aplikasi Momomgku</p>
+                </td>
+                <td>
+                    <a href="https://www.figma.com/file/gKNxuol79uBs0I5gJPlP9k/Koperasi?type=design&mode=design&t=ZugUCH1HLKYmVgnO-1">
+                    <img src="koperasi.jpg" alt="Contoh Karya 3" class="sample-img">
+                    </a>
+                    <p style="text-align: center;">Desain tampilan halaman aplikasi dekstop koperasi</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Resume Seminar InFoVest Poltek</h3>
+        <ul>
+            <li>
+                <h4>1. Bpk.Indra Kurniawan - Senior Consultant Red Hat Indonesia</h4>
+                <p>Imatama bekerja sama dengan Delteknologi sejak 2017 dan telah mengembangkan tiga solusi utama. Pertama, "Modern ID in Transaction" untuk kerjasama dengan lembaga lain. Kedua, "Modern Application Development" dengan berkolaborasi dalam berbagai bahasa pemrograman. 
+                    Dan ketiga, "Arti Security" yang berfokus pada layanan keamanan untuk klien, terutama di sektor keuangan. Imatama juga membuka lowongan bagi mereka yang ingin mengaplikasikan ilmu yang didapat di kampus dalam pekerjaan, mengingat pentingnya memiliki portofolio yang solid. 
+                    Kesabaran dan konsistensi ditekankan, sambil terus membangun kemampuan teknis dan komunikasi. Selain itu, pembicara memberikan contoh konsep Minimum Viable Product (MVP) dalam menyelesaikan masalah, seperti aplikasi untuk membantu orang yang stres dengan memberikan layanan konsultasi.</p>
+                <p>Kesimpulan materi dari Mas Indra membahas tentang perubahan tren belanja dengan kemunculan platform seperti Tokopedia dan Shopee. Dia juga memperkenalkan Expo sebagai solusi untuk ekspediting exporting di dunia maritim. 
+                    Mas Indra membahas keamanan data, peningkatan penggunaan Cloud, dan pentingnya sertifikasi. Dia memberikan gambaran tentang Open Shift, fokus pada mobile banking, dan mencatat pertumbuhan Open Source di industri.
+                    Mas Indra menyarankan untuk fokus belajar Open Source untuk meningkatkan peluang karir. Terakhir, dia membagikan tentang Landscape, produk, dan solusi yang ditawarkan oleh Pratama.</p>
+            </li><br>
+            <li>
+                <h4>2. Nofi Bayu Darmawan - Founder & CEO Komerce (Startup Teknologi Terkemuka di Jawa Tengah)</h4>
+                <p>Pembicara pak Novi  beliau adalah CEO dan pendiri komerce ,komerce star up yang berdiri di desa atau pelosok ,apa itu komerce ,komerce adalah aplikasi yang digunakan untuk berkonsultasi teknologi ,beliau pak Novi dahulunya adalah PNS abdi negara ,namun gajinya dinilai lebih kecil dari orang orang dari teknologi ,kemudian Beliau mendirikan aplikasi komerce Belian mejadi CEO sekaliagus fonder di komerce,beliau mengajarkan agar kita tuh dapat memanage teknologi dengan tepat ,beliau mengajarkan cara cara mendirikan starup seperti dirinya agar dapat maju dan sukses ,untuk motivasi pak Novi adalah memajukan UMKM .</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <div class="contact-text">
+            <h2>Contact<span> Me </span></h2>
+        <table>
+            <tr>
+                <td>
+                    <h4> Address </h4>
+                    <p>Mahasiswa</p>
+                </td>
+                <td>
+                    <h4> Email </h4>
+                    <p>yuni75561@gmail.com</p>
+                </td>
+                <td>
+                    <h4> Telp. </h4>
+                    <p>085607460935</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4> LinkedIn </h4>
+                    <a href="https://www.linkedin.com/in/tri-yuni-ayuningtyas-63b655254" target="_blank">
+                    <p><span><img src="https://i.pinimg.com/564x/2e/af/93/2eaf93c574b38475d5e32b41ebbe2b5b.jpg" alt="linkedin" class="img-contact"></span> Tri Yuni Ayuningtyas </p>
+                    </a>
+                </td>
+                <td>
+                    <h4> Figma </h4>
+                    <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1217714480054390685 " target="_blank">
+                    <p><span><img src="https://i.pinimg.com/474x/17/06/c9/1706c9f16bd08eb5e03f1df3e0a94a1c.jpg" alt="figma" class="img-contact"></span> Tri Yuni Ayuningtyas </p>
+                    </a>
+                </td>
+                <td>
+                    <h4> Sosial Media </h4>
+                    <a href="https://www.instagram.com/tyas5750_/" target="_blank">
+                    <p><span><img src="https://i.pinimg.com/564x/19/42/d5/1942d5deb0f788e6228054cd92767ff6.jpg" alt="instagram" class="img-contact"></span> : @tyas5750_</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Portofolio Saya</p>
+    </footer>
+</body>
+</html>

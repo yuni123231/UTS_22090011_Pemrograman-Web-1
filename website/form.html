@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+       <title>Tips Menjaga Kesehatan Tubuh</title> 
+       <style>
+        </style>
+    </head>
+    <body>
+            <header>
+                <h2>Welcome To</h2>
+                <h1>StayHealthyToday</h1>
+            </header>
+            
+            <form id="myForm">
+                <label for="nama">Nama:</label>
+                <input type="text" name="nama" id="nama">
+                <br>
+                <label for="umur">Umur:</label>
+                <input type="umur" name="umur" id="umur">
+                <br>
+                <label for="alamat">Alamat:</label>
+                <input type="alamat" name="alamat" id="alamat">
+                <br>
+                <label for="tanggal">Tanggal:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+                <br>
+                <label for="tips">Silakan tandai kotak di sebelah setiap tips yang telah Anda terapkan dalam sepekan terakhir:</label><br>
+
+                <label>
+                    <input type="checkbox" id="tips1" name="tips[]" value="Olahraga">
+                    Rutin berolahraga minimal 30 menit setiap hari
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips2" name="tips[]" value="Nutrisi">
+                    Konsumsi makanan seimbang yang kaya akan sayuran dan buah-buahan</label>
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips3" name="tips[]" value="Air">
+                    Minum air putih setidaknya 8 gelas sehari
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips4" name="tips[]" value="Kebiasaan Buruk">
+                    Hindari merokok dan konsumsi alkohol berlebihan
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips5" name="tips[]" value="Istirahat">
+                    Cukup tidur minimal 7-8 jam per malam
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips6" name="tips[]" value="Pencegahan Penyakit">
+                    Lakukan pemeriksaan kesehatan rutin
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips7" name="tips[]" value="Kelola Stres">
+                    Atur stres dengan teknik relaksasi seperti meditasi atau yoga
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips8" name="tips[]" value="Kebersihan">
+                    Jaga kebersihan tangan untuk mencegah penyebaran penyakit
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips9" name="tips[]" value="Keselamatan">
+                    Gunakan perlengkapan keselamatan saat berkendara, seperti helm dan sabuk pengaman
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="tips10" name="tips[]" value="Makanan">
+                    Hindari terlalu banyak mengonsumsi makanan olahan dan fast food
+                </label>
+                <br>
+
+                <input type="button" value="Cek" onclick="tampilkanHasil()">
+            </form>
+        
+    <!-- Tempat untuk menampilkan hasil -->
+    <div id="hasil">
+
+    </div>
+    
+    <script>
+        function tampilkanHasil() {
+          var nama = document.getElementById("nama").value;
+          var umur = document.getElementById("umur").value;
+          var alamat = document.getElementById("alamat").value;
+          var tanggal = document.getElementById("tanggal").value;
+      
+          var tipsTerpilih = [];
+          var checkboxes = document.getElementsByName("tips[]");
+      
+          for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+              tipsTerpilih.push(checkboxes[i].value);
+            }
+          }
+      
+          if (tipsTerpilih.length < 5) {
+            alert("Rajinlah menjaga kesehatan tubuh Anda agar terhindar dari berbagai macam penyakit. Pilih minimal 5 tips.");
+            return; // Hentikan eksekusi lebih lanjut jika tips kurang dari 5.
+          }
+      
+          var hasil = "<h2>Hasil:</h2>";
+          hasil += "<p><strong>Nama:</strong> " + nama + "</p>";
+          hasil += "<p><strong>Umur:</strong> " + umur + "</p>";
+          hasil += "<p><strong>Alamat:</strong> " + alamat + "</p>";
+          hasil += "<p><strong>Tanggal:</strong> " + tanggal + "</p>";
+      
+          if (tipsTerpilih.length > 0) {
+            hasil += "<p><strong>Tips yang Anda terapkan:</strong> " + tipsTerpilih.join(", ") + "</p>";
+          } else {
+            hasil += "<p>Anda belum memilih tips apa pun.</p>";
+          }
+      
+          // Menampilkan hasil dalam elemen div hasil
+          document.getElementById("hasil").innerHTML = hasil;
+        }
+      </script>            
+    </body>
+</html>

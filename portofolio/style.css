@@ -1,0 +1,237 @@
+    /* Style untuk body */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #E5CFF7;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #322653;
+    }
+
+    h1.logo {
+        color: #fff;
+        font-size: 30px;
+        margin: 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    h1.logo span {
+        color: #9a8cbf; 
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-right: 20px; 
+    }
+    
+    ul li:last-child {
+        margin-right: 0; 
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold; 
+    }
+
+    nav a:hover {
+        color: #CCC8AA;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 55px;
+        text-align: left;
+    }
+
+    #about-me p {
+        font-size: 16px;
+        text-align: justify;
+        margin: 0 20px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #about-me h4 {
+        text-align: center;
+    }
+
+    .about {
+        padding: 20px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .profile-img {
+        float: left;
+        width: 150px;
+        height: 100%;
+    }
+
+    .about-button {
+        background-color: #E5CFF7;
+        color: #020202;
+        padding: 10px 20px; 
+        border-radius: 20px;
+        border: no1px solid #322653; 
+        cursor: pointer; 
+    }
+
+    .about-button:hover {
+        background-color: #9a8cbf; 
+    }
+
+    table {
+        width: 100%; 
+    }
+    
+    td {
+        padding: 10px;
+    }
+    
+    td img {
+        width: 200px; 
+        height: auto; 
+    }
+    
+    section {
+        width: 90%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+
+    nav p {
+        font-size: 16px;
+        text-align: justify;
+        margin: 0 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #experience {
+        text-align: left; 
+    }
+    
+    #experience ul {
+        list-style: none; 
+        padding: 20px; 
+    }
+    
+    #experience li {
+        display: block;
+        margin: 0 15px;
+    }
+
+    li h4 {
+        font-size: 16px;  
+    }
+
+    #experience p {
+        font-size: 16px;
+        text-align: justify;
+        margin: 0 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+
+    /* Style untuk work samples */
+    .work-sample {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    .sample-img {
+        width: 350px;
+        height: 100%;
+    }
+
+     /* Style untuk contact */
+     
+    .contact.me{
+        text-align: center;
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact.text h2{
+        text-align: center;
+        color: white;
+        font-size: 65px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .img-contact {
+        width: 30px; 
+        height: auto; 
+        vertical-align: middle
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .zoomable-image {
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .zoomable-image img {
+        transition: transform 0.3s ease;
+      }
+  
+      .zoomable-image:hover img {
+        transform: scale(1.2);
+      }
+
+    /* Style untuk footer */
+    footer {
+        text-align: center;
+        background-color: #322653;
+        color: #fff;
+        padding: 10px;
+    }

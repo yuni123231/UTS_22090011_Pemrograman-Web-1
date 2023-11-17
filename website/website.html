@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StayHealthyToday</title>
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <h1 class="logo">StayHealthyToday</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#philosophy">Our Philosophy</a></li>
+                <li><a href="artikel.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="center-content">
+            <table>
+                <tr>
+                    <td>
+                        <img src="home.png" alt="olahraga" class="home-img">
+                    </td>
+                    <td>
+                        <p></p>
+                        <h2>Achieve your goals</h2>
+                        <h2>StayHealthyToday</h2>
+                        <p>Build healthy habits by exercising, maintaining a complete diet and calories.</p>
+                        <button class="about-button" type="button" onclick="myFunction">Start Now &rarr;</button>
+                    </td>
+                </tr>
+                <script>
+                    // Temukan tombol dengan class "about-button"
+                    var button = document.querySelector('.about-button');
+                  
+                    // Tambahkan event listener untuk menangani tindakan saat tombol diklik
+                    button.addEventListener('click', function() {
+                      // Mengarahkan pengguna ke halaman lain
+                      window.location.href = 'form.html';
+                    });
+                  </script> 
+            </table>
+        </div>
+    </section>
+
+    <h1 class="center-text">Features</h1>
+    <div class="fitur">
+        <div class="fitur-box">
+            <img src="kategori.png" alt="kategori" class="img-fitur">
+            <h3>Kategori</h3>
+        </div>
+        <div class="fitur-box">
+            <img src="timbangan.png" alt="cek" class="img-fitur">
+            <h3>Cek Kesehatan</h3>
+        </div>
+        <div class="fitur-box">
+            <img src="dokter.png" alt="dokter" class="img-fitur">
+            <h3>Booking Dokter</h3>
+        </div>
+        <div class="fitur-box">
+            <img src="komunitas.jpg" alt="komunitas" class="img-fitur">
+            <h3>Komunitas</h3>
+        </div>
+    </div>
+
+    <section id="philosophy">
+        <div class="text-box">
+            <h1>Our Philosophy</h1>
+            <p>“Waktu dan kesehatan adalah dua aset berharga yang tidak dikenali dan hargai sampai keduanya hilang.”</p>
+            <h2>– Denis Waitley</h2>
+            <p id="moving-text">***</p>
+        </div>
+    </section>
+
+    
+    <section id="explore">
+        <table>
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <h2 style="color: #3498db;">#</h2>
+                    <h2>Hit your health goals in 1-2-3</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="buah.png" alt="makanan" class="img-explore">
+                    <h4>Pilihan Makanan Sehat</h4>
+                    <p>Memilih makanan sehat dan gizi seimbang merupakan langkah utama.</p>
+                    <p>Konsumsi banyak buah, sayuran, biji-bijian utuh, protein berkualitas, dan lemak sehat.  Ini membentuk dasar kesehatan Anda.</p>
+                </td>
+                <td>
+                    <img src="olahraga.png" alt="olahraga" class="img-explore">
+                    <h4>Aktivitas Fisik Teratur</h4>
+                    <p>Berolahraga secara teratur penting untuk menjaga kesehatan jantung, meningkatkan kebugaran fisik, mengontrol berat badan, dan mengurangi risiko penyakit kronis.</p>
+                    <p>Aktivitas fisik harus menjadi bagian penting dari rutinitas harian Anda.</p>
+                </td>
+                <td>
+                    <img src="tips3.png" alt="Pantau Konsumsi" class="img-explore">
+                    <h4>Pantau Konsumsi Kalori dan Berat Badan</h4>
+                    <p>Jika Anda memiliki tujuan berat badan atau peningkatan kesehatan yang terkait dengan berat badan, </p>
+                    <p>penting untuk memantau asupan kalori Anda dan menjaga berat badan yang sehat. Konsumsi kalori harus seimbang dengan kebutuhan tubuh Anda.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section id="contact">
+        <table>
+            <tr>
+                <td>
+                    <h1>About Me</h1>
+                </td>
+                <td>
+                    <h4> Address </h4>
+                    <p>Mahasiswa</p>
+                </td>
+                <td>
+                    <h4> Email </h4>
+                    <p>yuni75561@gmail.com</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>StayHealthyToday</p>
+                </td>
+                <td>
+                    <h4>No. Hp</h4>
+                    <p>085607460935</p>
+                </td>
+                <td>
+                    <h4>Sosial Media</h4>
+                    <p><span><img src="https://i.pinimg.com/564x/19/42/d5/1942d5deb0f788e6228054cd92767ff6.jpg" alt="instagram" style="width: 30px; height: auto; vertical-align: middle;"></span> : @tyas5750_</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 StayHealthyToday</p>
+    </footer>
+</body>
+</html>
